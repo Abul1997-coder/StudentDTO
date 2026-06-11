@@ -65,7 +65,7 @@ public class StudentController {
         log.info("DELETE by id /delete/id: {}",id);
         service.deleteByid(id);
 
-        return "Student Deleted Sucessfully";
+        return "Student Deleted Sucessfully.";
     }
 
 }
