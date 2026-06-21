@@ -40,7 +40,8 @@ public class StudentController {
         return responceDTO;
     }
 
-    //Fetch All Student=================
+    //Fetch All Student or view the All student=================
+   //http://localhost:8091/student/getAll
     @GetMapping("/getAll")
     public List<StudentResponceDTO> getAllStudent()
     {
@@ -59,6 +60,7 @@ public class StudentController {
 
 
     //Delete by Id=======================
+    //http://localhost:8091/student/delete/2
     @DeleteMapping("/delete/{id}")
     public String deleteStudent(@PathVariable Long id){
 
